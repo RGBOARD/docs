@@ -1,8 +1,9 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
-
+<img src="assets/images/20250503_010118.jpg" alt="img of RGBoard">
 # RGBoard Docs 🔴🟢🔵
 RGBoard is a system comprised of parts in different disciplines.
 To replicate this project, some fundamentals in different areas must be
@@ -31,6 +32,10 @@ be spending most of your time. Raspberry Pi's will usually run on an Operating S
 running on top of the very much popular Linux kernel. You need to understand how to use this type of
 Operating System. If all you have ever used is Windows, you have quite a journey. If you have a Mac,
 you're halfway there.
+### C++ 🐀
+What makes the lights go in RGBoard is a [library](https://github.com/hzeller/rpi-rgb-led-matrix), mostly written in C++. You need
+to know how to compile such libraries and bind them to your own project. You can wrap these executables with Python or another
+language. Did you know the unofficial mascot of C++ is a diseased rat? 
 ### Python and Flask 🐍
 The back-end of RGBoard is built with Flask, a web server interface for handling client requests,
 and written in Python. Python is a relatively easy language to code in thanks to how much is able to
@@ -42,4 +47,6 @@ Tailwind CSS to have quick styling options, and Vite to build the whole thing in
 own front-end if you desire or even turn RGBoard into a mobile app. In the front-end is where most people can apply their flavor.
 ### Relational databases 🗃️
 In RGBoard, we use SQLite to store data due to it being so easy to interface with Python. You need to know concepts of
-Relational Databases like set theory, tables, and SQL queries and transactions. 
+Relational Databases like set theory, tables, and SQL queries and transactions.
+## Lets get started
+The first step would be to choose your sizing and power. Click [here](/design.html) to go to the design step.
