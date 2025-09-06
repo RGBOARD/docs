@@ -1,35 +1,52 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
-
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
-
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
-
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
-
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-To get started with creating a site, simply:
-
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+<img src="assets/images/20250503_010118.jpg" alt="img of RGBoard">
+# RGBoard Docs 🔴🟢🔵
+RGBoard is a system comprised of parts in different disciplines.
+To replicate this project, some fundamentals in different areas must be
+understood to create derivations out of the provided instructions. The
+documentation provided serves as a guide to help create RGBoards from scratch.
+## Fundamentals Prerequisites
+This is a great project for those that love tinkering and are not afraid of doing
+a little bit of everything. Let's start with the fundamentals to get started
+in building RGBoards.
+### Engineering graphics 📐✏️
+A lot of people outside of mechanical engineering think this class is a waste of
+time, but is one of the most important engineering classes and one
+of the most classical forms of engineering. Truth is, to build something, you're going to have to
+measure and sketch various iterations til you get your desired end result. Don't panic,
+you don't need to know how to create complex objects, it all depends on what kind of board
+you want to assemble, but in most cases, you will be building a frame. All you need to know is how
+to draw measured lines, do your corners and measure where to put your holes so you can bolt your frame
+to the panels.
+### Electrical engineering ⚡
+RGBoard needs power relative to its size and the correct GPIO wiring. You don't need to be an electrical engineer,
+but you need to understand that if each of your panel draws 3.8A, and you have 2 panels, then you need at minimum, a
+10A power supply.
+### Raspberry Pi 4 Model B and Unix/Linux Operating Systems 💻
+RGBoard is basically a Raspberry Pi project and this is where you will
+be spending most of your time. Raspberry Pi's will usually run on an Operating System built on Debian
+running on top of the very much popular Linux kernel. You need to understand how to use this type of
+Operating System. If all you have ever used is Windows, you have quite a journey. If you have a Mac,
+you're halfway there.
+### C++ 🐀
+What makes the lights go in RGBoard is a [library](https://github.com/hzeller/rpi-rgb-led-matrix), mostly written in C++. You need
+to know how to compile such libraries and bind them to your own project. You can wrap these executables with Python or another
+language. Did you know the unofficial mascot of C++ is a diseased rat? 
+### Python and Flask 🐍
+The back-end of RGBoard is built with Flask, a web server interface for handling client requests,
+and written in Python. Python is a relatively easy language to code in thanks to how much is able to
+abstract with its very popular and well documented libraries. You will be handling user request, authenticating
+them cryptographically with JSON Web Tokens, and making sure they have their respective CRUD permissions.
+### Web frameworks 🌐
+RGBoards front-end is built using a selected set of tools out of the rabbit hole that is web development. We use the React with JavaScript,
+Tailwind CSS to have quick styling options, and Vite to build the whole thing in a bundle that can be served with NGINX. You can make your
+own front-end if you desire or even turn RGBoard into a mobile app. In the front-end is where most people can apply their flavor.
+### Relational databases 🗃️
+In RGBoard, we use SQLite to store data due to it being so easy to interface with Python. You need to know concepts of
+Relational Databases like set theory, tables, and SQL queries and transactions.
+## Lets get started
+The first step would be to choose your sizing and power. Click [here](/design.html) to go to the design step.
