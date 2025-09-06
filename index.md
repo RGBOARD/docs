@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Introduction
 layout: home
 nav_order: 1
 ---
@@ -49,4 +49,4 @@ own front-end if you desire or even turn RGBoard into a mobile app. In the front
 In RGBoard, we use SQLite to store data due to it being so easy to interface with Python. You need to know concepts of
 Relational Databases like set theory, tables, and SQL queries and transactions.
 ## Lets get started
-The first step would be to choose your sizing and power. Click [here](/design.html) to go to the design step.
+The first step would be to choose your sizing and power. Click [here](/docs/hardware-setup.html) to go set up the hardware.
